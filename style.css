@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a :hover {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    font-weight: bold;
+}
+
+
+/* navbar section --------------------------------------------------------->   */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-links li:hover {
+    text-decoration: red underline;
+    color: red;
+}
+
+
+/* home section css ---------------------------------------------------------->  */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(home.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    color: white;
+    text-align: center;
+    margin-bottom: 148px;
+}
+
+.header-content h2 {
+    font-size: 11vmin;
+    color: red;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    color: black;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: yellow;
+    border-radius: 30px;
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.ctn:hover {
+    background-color: rgb(248, 194, 0);
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.header-ctn-enquiry {
+    margin-top: 60px;
+}
+
+
+/* our course section-------------------------------------------------->  */
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    /* border: 2px solid brown; */
+    padding: 0px 14px;
+    margin: 2px 0px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 248px;
+    margin: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.center {
+    text-align: center;
+}
+
+.h-primary {
+    font-size: 34px;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.6rem;
+    padding: 12px;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    margin-top: 29px;
+    height: 39px;
+    width: 126px;
+    border-radius: 30px;
+    background-color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(248, 194, 0);
+}
+
+
+/* about section------------------------------------------------------------>  */
+
+.about {
+    width: 87%;
+    height: 100vh;
+    background-image: url(about-us2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 28px;
+    border-radius: 61px
+}
+
+.about-content {
+    width: 50%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-content h1 {
+    font-size: 7vmin;
+    margin: 50px;
+    color: hwb(0deg 0% 0%);
+    text-decoration: underline;
+    text-align: center;
+}
+
+.about-content .line {
+    margin-bottom: 50px;
+}
+
+.about-content p {
+    color: black;
+    font-weight: bold;
+    text-decoration: red underline;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-content .ctn {
+    margin-top: 40px;
+}
+
+
+/* contact section ---------------------------------------------------------> */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: auto;
+    background: url('contact-us.jpg') center;
+}
+
+.container h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    text-align: center
+}
+
+.con-box {
+    display: flex;
+    margin: auto;
+    margin: 19px 0px;
+    /* padding: 0px 38px; */
+    justify-content: center;
+}
+
+.con-box input {
+    width: 25vw;
+    height: 4vh
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* social media icon section-------------------------------------------------->  */
+
+.icons {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: fixed;
+    z-index: 100;
+}
+
+.icons ul {
+    padding: initial;
+}
+
+.icons ul li {
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: #fff;
+    background: #000;
+}
+
+.icons .facebook {
+    background: #3b5998;
+}
+
+.icons .twitter {
+    background: #55acee;
+}
+
+.icons .instagram {
+    background: #ff4800;
+}
+
+.icons .phone {
+    background: #362d29;
+}
+
+.icons .email {
+    background: #6387a0;
+}
+
+.icons ul li:hover {
+    padding-left: 30px;
+    width: 80px;
+    transition: 1s;
+}
+
+.icons a {
+    font-size: 22px;
+}
+
+
+/* whatsapp logo --------------------------------------------------------> */
+
+.whatsapp-btn-container {
+    position: fixed;
+    right: 30px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+}
+
+.logo img {
+    width: 10%;
+    height: 94%;
+    border-radius: 50px;
+}
+
+@keyframes fade-up {
+    100% {
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 48px;
+    color: #25d366;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp-btn-container span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover+span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+
+
+/* footer section--------------------------------------------------------->  */
+
+#footer {
+    background: black;
+    color: white;
+}
+
+
+/* mobile device section----------------------------------------------------------------> */
+
+@media (max-width:850px) {
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #services {
+        flex-wrap: wrap;
+    }
+    #services .box {
+        margin: auto;
+    }
+    #services .box img {
+        height: 50%;
+        width: 50%;
+        margin: 8px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .about-content {
+        margin-top: -85px;
+    }
+    .about {
+        height: fit-content;
+    }
+    .nav-links {
+        height: fit-content;
+    }
+    .con-box input {
+        width: 50vw;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-content {
+        margin-bottom: 526px;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1024px) {
+    .header-content {
+        margin-bottom: 0px;
+    }
+}
